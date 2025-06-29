@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+      background: #121212;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column
+    }
+
+    .typewriter {
+      font-size: 2rem;
+      display: inline-block;
+    }
+
+    .typewriter-text {
+      display: inline-block;
+      white-space: pre-wrap;
+      transition: transform 0.2s ease;
+    }
+
+    .typewriter-cursor {
+      display: inline-block;
+      margin-left: 2px;
+      font-weight: bold;
+      color: #0ff;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
